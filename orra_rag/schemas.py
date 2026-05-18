@@ -1,3 +1,4 @@
+# from __future__ import annotations
 
 from typing import Literal
 
@@ -6,9 +7,12 @@ from pydantic import BaseModel, Field
 
 class QueryRequest(BaseModel):
     query: str = Field(..., min_length=2, description="User question about ORRA.")
-    top_k_docs: int = Field(default=5, ge=1, le=20)
-    top_k_gist: int = Field(default=5, ge=1, le=20)
-    include_context: bool = Field(default=False)
+    top_k_docs: int = Field(
+        default=5, ge=1, le=20, description="Max chunks to retrieve from the indexed docs.")
+    top_k_gist: int = Field(
+        default=5, ge=1, le=20, description="Max entries to retrieve from the FAQ gist.")
+    include_context: bool = Field(
+        default=False, description="Return the raw assembled context alongside the answer")
 
 
 class RetrievalRequest(BaseModel):
