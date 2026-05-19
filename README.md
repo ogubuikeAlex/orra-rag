@@ -1,6 +1,6 @@
-# ORRA RAG API
+# ORRA RAG AGENT
 
-`orra-rag` is a A RAGAS-evaluated enterprise hybrid RAG system built for orra. Its exposed via a FastAPI RAG service for querying ORRA docs and FAQs.
+`orra-rag-agent` is a hybrid enterprise AI agent built for ORRA. It utilizes a robust, RAGAS-evaluated retrieval pipeline and features a FastAPI API to allow seamless querying of ORRA documents and FAQs.
 
 > I built this to help improve how users interact with [ORRA](https://orra.xyz/) documentation and FAQ retrieval but you can absolutely use it for your own projects
 
