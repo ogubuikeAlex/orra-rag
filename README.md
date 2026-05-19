@@ -1,6 +1,6 @@
 # ORRA RAG API
 
-`orra-rag` is a unified FastAPI RAG service for ORRA docs and FAQs.
+`orra-rag` is a A RAGAS-evaluated enterprise hybrid RAG system built for orra. Its exposed via a FastAPI RAG service for querying ORRA docs and FAQs.
 
 > I built this to help improve how users interact with [ORRA](https://orra.xyz/) documentation and FAQ retrieval but you can absolutely use it for your own projects
 
